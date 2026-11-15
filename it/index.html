@@ -32,11 +32,11 @@ p{margin:0}
 header.top{position:sticky;top:0;z-index:5;background:rgba(15,15,16,.94);backdrop-filter:blur(8px);border-bottom:1px solid #2a2a2d;margin-top:14px}
 header.top .wrap{display:flex;align-items:center;min-height:60px}
 header nav{display:flex;gap:20px;align-items:center;width:100%}
-header nav .lang{margin-left:auto}
+header nav .lang{flex:1;justify-content:space-around;margin-left:12px}
 header nav a{text-decoration:none;font-weight:600;font-size:16px}header nav a:hover{text-decoration:underline}
-.lang{display:flex;gap:2px;font-size:14px}.lang a{padding:6px 8px;border-radius:6px;text-decoration:none;color:#b9b9bd;font-weight:600}.lang a[aria-current]{color:var(--ink);background:var(--paper)}
+.lang{display:flex;gap:2px;font-size:15px}.lang a{padding:6px 8px;border-radius:6px;text-decoration:none;color:#b9b9bd;font-weight:600}.lang a[aria-current]{color:var(--ink);background:var(--paper)}
 header .btn{min-height:40px;padding:0 18px;font-size:15px}
-@media(max-width:560px){header nav{gap:10px}header nav .l{display:none}header nav .lang{margin-left:0}header .btn{margin-left:auto;padding:0 14px}}
+@media(max-width:560px){header nav .l{display:none}header nav .lang{margin-left:0}}
 
 .hero{padding:clamp(40px,7vw,92px) 0 clamp(70px,9vw,120px);overflow:hidden}
 .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
@@ -111,7 +111,7 @@ footer a{color:#d6d6d8}
 </style></head><body>
 <a class="skip" href="#main">Vai al contenuto</a>
 <div class="brand"><a href="../it/" aria-label="In The Pit"><img src="../img/logo.webp" alt="In The Pit" width="900" height="300"></a></div>
-<header class="top"><div class="wrap"><nav><a class="l" href="#tk">Funzioni</a><a class="l" href="#faq">Domande</a><div class="lang" aria-label="Language"><a href="../" hreflang="en" lang="en">EN</a><a href="../fr/" hreflang="fr" lang="fr">FR</a><a href="../es/" hreflang="es" lang="es">ES</a><a href="../it/" hreflang="it" lang="it" aria-current="page">IT</a><a href="../de/" hreflang="de" lang="de">DE</a></div><a class="btn" href="https://i.n-t.he-p.it">Apri l’app</a></nav></div></header>
+<header class="top"><div class="wrap"><nav><a class="l" href="#tk">Funzioni</a><a class="l" href="#faq">Domande</a><div class="lang" aria-label="Language"><a href="../" hreflang="en" lang="en">EN</a><a href="../fr/" hreflang="fr" lang="fr">FR</a><a href="../es/" hreflang="es" lang="es">ES</a><a href="../it/" hreflang="it" lang="it" aria-current="page">IT</a><a href="../de/" hreflang="de" lang="de">DE</a></div></nav></div></header>
 <main id="main">
 <section class="hero k"><div class="wrap"><div><h1>Il tuo diario dei concerti, biglietti inclusi.</h1><p class="lead">In The Pit conserva ogni concerto a cui sei stato o andrai, con i biglietti, le foto e gli amici. Gratis, sul telefono.</p><div class="btns"><a class="btn" href="https://i.n-t.he-p.it">Apri l’app</a><a class="btn ghost" href="#tk">Scopri cosa fa</a></div></div>
 <div class="phones" aria-hidden="false"><div class="phone p2"><img src="../img/s-filters-it.webp" alt="Il pannello dei filtri" width="780" height="1560" loading="lazy"></div><div class="phone p1"><img src="../img/s-list-it.webp" alt="L’elenco dei concerti di In The Pit" width="780" height="1560" loading="lazy"></div></div></div></section>

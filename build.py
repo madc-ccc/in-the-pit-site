@@ -128,11 +128,11 @@ p{margin:0}
 header.top{position:sticky;top:0;z-index:5;background:rgba(15,15,16,.94);backdrop-filter:blur(8px);border-bottom:1px solid #2a2a2d;margin-top:14px}
 header.top .wrap{display:flex;align-items:center;min-height:60px}
 header nav{display:flex;gap:20px;align-items:center;width:100%}
-header nav .lang{margin-left:auto}
+header nav .lang{flex:1;justify-content:space-around;margin-left:12px}
 header nav a{text-decoration:none;font-weight:600;font-size:16px}header nav a:hover{text-decoration:underline}
-.lang{display:flex;gap:2px;font-size:14px}.lang a{padding:6px 8px;border-radius:6px;text-decoration:none;color:#b9b9bd;font-weight:600}.lang a[aria-current]{color:var(--ink);background:var(--paper)}
+.lang{display:flex;gap:2px;font-size:15px}.lang a{padding:6px 8px;border-radius:6px;text-decoration:none;color:#b9b9bd;font-weight:600}.lang a[aria-current]{color:var(--ink);background:var(--paper)}
 header .btn{min-height:40px;padding:0 18px;font-size:15px}
-@media(max-width:560px){header nav{gap:10px}header nav .l{display:none}header nav .lang{margin-left:0}header .btn{margin-left:auto;padding:0 14px}}
+@media(max-width:560px){header nav .l{display:none}header nav .lang{margin-left:0}}
 
 .hero{padding:clamp(40px,7vw,92px) 0 clamp(70px,9vw,120px);overflow:hidden}
 .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
@@ -240,7 +240,7 @@ def page(i):
 <style>{CSS}</style></head><body>
 <a class="skip" href="#main">{a("skip")}</a>
 <div class="brand"><a href="{lhref(lg)}" aria-label="In The Pit"><img src="{base}img/logo.webp" alt="In The Pit" width="900" height="300"></a></div>
-<header class="top"><div class="wrap"><nav><a class="l" href="#tk">{a("nav_f")}</a><a class="l" href="#faq">{a("nav_q")}</a><div class="lang" aria-label="Language">{langs}</div><a class="btn" href="{APP}">{a("open")}</a></nav></div></header>
+<header class="top"><div class="wrap"><nav><a class="l" href="#tk">{a("nav_f")}</a><a class="l" href="#faq">{a("nav_q")}</a><div class="lang" aria-label="Language">{langs}</div></nav></div></header>
 <main id="main">
 <section class="hero k"><div class="wrap"><div><h1>{a("h1")}</h1><p class="lead">{a("hp")}</p><div class="btns"><a class="btn" href="{APP}">{a("open")}</a><a class="btn ghost" href="#tk">{a("see")}</a></div></div>
 <div class="phones" aria-hidden="false">{ph(f"s-filters-{lg}.webp",t("alt_filters",i)).replace('class="phone"','class="phone p2"')}{ph(f"s-list-{lg}.webp",t("alt_list",i)).replace('class="phone"','class="phone p1"')}</div></div></section>
