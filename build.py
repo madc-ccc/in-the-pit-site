@@ -123,15 +123,16 @@ p{margin:0}
 .btn:hover{filter:brightness(1.08)}
 .btn.ghost{background:transparent;color:inherit;border-color:currentColor}
 .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-header.top{position:sticky;top:0;z-index:5;background:rgba(15,15,16,.92);backdrop-filter:blur(8px);border-bottom:1px solid #2a2a2d}
-header.top .wrap{display:flex;align-items:center;gap:18px;min-height:68px}
-header.top img{width:104px;height:auto}
-header nav{display:flex;gap:20px;margin-left:auto;align-items:center}
+.brand{width:min(1120px,100% - 40px);margin:18px auto 0}
+.brand img{width:100%;height:auto;border-radius:18px}
+header.top{position:sticky;top:0;z-index:5;background:rgba(15,15,16,.94);backdrop-filter:blur(8px);border-bottom:1px solid #2a2a2d;margin-top:14px}
+header.top .wrap{display:flex;align-items:center;min-height:60px}
+header nav{display:flex;gap:20px;align-items:center;width:100%}
+header nav .lang{margin-left:auto}
 header nav a{text-decoration:none;font-weight:600;font-size:16px}header nav a:hover{text-decoration:underline}
-.lang{display:flex;gap:2px;font-size:14px}.lang a{padding:6px 7px;border-radius:6px;text-decoration:none;color:#b9b9bd;font-weight:600}.lang a[aria-current]{color:var(--ink);background:var(--paper)}
-header .btn{min-height:42px;padding:0 18px;font-size:15px}
-@media(max-width:820px){header nav .l{display:none}header.top .wrap{gap:10px}.lang a{padding:6px 5px}header .btn{padding:0 14px}}
-@media(max-width:520px){header.top img{width:84px}header .btn{display:none}}
+.lang{display:flex;gap:2px;font-size:14px}.lang a{padding:6px 8px;border-radius:6px;text-decoration:none;color:#b9b9bd;font-weight:600}.lang a[aria-current]{color:var(--ink);background:var(--paper)}
+header .btn{min-height:40px;padding:0 18px;font-size:15px}
+@media(max-width:560px){header nav{gap:10px}header nav .l{display:none}header nav .lang{margin-left:0}header .btn{margin-left:auto;padding:0 14px}}
 
 .hero{padding:clamp(40px,7vw,92px) 0 clamp(70px,9vw,120px);overflow:hidden}
 .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
@@ -238,8 +239,8 @@ def page(i):
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
 <style>{CSS}</style></head><body>
 <a class="skip" href="#main">{a("skip")}</a>
-<header class="top"><div class="wrap"><a href="{lhref(lg)}" aria-label="In The Pit"><img src="{base}img/logo.webp" alt="In The Pit" width="900" height="300"></a>
-<nav><a class="l" href="#tk">{a("nav_f")}</a><a class="l" href="#faq">{a("nav_q")}</a><div class="lang" aria-label="Language">{langs}</div><a class="btn" href="{APP}">{a("open")}</a></nav></div></header>
+<div class="brand"><a href="{lhref(lg)}" aria-label="In The Pit"><img src="{base}img/logo.webp" alt="In The Pit" width="900" height="300"></a></div>
+<header class="top"><div class="wrap"><nav><a class="l" href="#tk">{a("nav_f")}</a><a class="l" href="#faq">{a("nav_q")}</a><div class="lang" aria-label="Language">{langs}</div><a class="btn" href="{APP}">{a("open")}</a></nav></div></header>
 <main id="main">
 <section class="hero k"><div class="wrap"><div><h1>{a("h1")}</h1><p class="lead">{a("hp")}</p><div class="btns"><a class="btn" href="{APP}">{a("open")}</a><a class="btn ghost" href="#tk">{a("see")}</a></div></div>
 <div class="phones" aria-hidden="false">{ph(f"s-filters-{lg}.webp",t("alt_filters",i)).replace('class="phone"','class="phone p2"')}{ph(f"s-list-{lg}.webp",t("alt_list",i)).replace('class="phone"','class="phone p1"')}</div></div></section>
