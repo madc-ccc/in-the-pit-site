@@ -6,4 +6,4 @@ Site statique, 5 langues (en à la racine, puis /fr/ /es/ /it/ /de/). Aucun fram
 - Régénérer : `DOMAIN=https://site.i.n-t.he-p.it python3 build.py`
 - Images : `img/` (captures de l'app avec des groupes fictifs).
 - Déploiement : un nouveau site Netlify (dépôt Git distinct de l'app), puis domaine personnalisé dans Netlify > Domain management.
-- Mettre à jour les captures : refaire les captures de l'app, convertir en WebP dans `img/`.
+- Captures : `img/s-<écran>-<langue>.webp`, générées depuis l’app (données fictives) dans chaque langue ; pour les refaire, refaire les captures puis les convertir en WebP.

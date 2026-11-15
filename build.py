@@ -242,11 +242,11 @@ def page(i):
 <nav><a class="l" href="#tk">{a("nav_f")}</a><a class="l" href="#faq">{a("nav_q")}</a><div class="lang" aria-label="Language">{langs}</div><a class="btn" href="{APP}">{a("open")}</a></nav></div></header>
 <main id="main">
 <section class="hero k"><div class="wrap"><div><h1>{a("h1")}</h1><p class="lead">{a("hp")}</p><div class="btns"><a class="btn" href="{APP}">{a("open")}</a><a class="btn ghost" href="#tk">{a("see")}</a></div></div>
-<div class="phones" aria-hidden="false">{ph("s-filters.webp",t("alt_filters",i)).replace('class="phone"','class="phone p2"')}{ph("s-list.webp",t("alt_list",i)).replace('class="phone"','class="phone p1"')}</div></div></section>
+<div class="phones" aria-hidden="false">{ph(f"s-filters-{lg}.webp",t("alt_filters",i)).replace('class="phone"','class="phone p2"')}{ph(f"s-list-{lg}.webp",t("alt_list",i)).replace('class="phone"','class="phone p1"')}</div></div></section>
 {feat("y",False,"","#f59e0b","tk",t("f1t",i),t("f1p",i),[t("f1a",i),t("f1b",i),t("f1c",i)],tkvis)}
-{feat("k",True,"","#2f6fed","fl",t("f2t",i),t("f2p",i),[t("f2a",i),t("f2b",i),t("f2c",i)],ph("s-filters.webp",t("alt_filters",i)))}
+{feat("k",True,"","#2f6fed","fl",t("f2t",i),t("f2p",i),[t("f2a",i),t("f2b",i),t("f2c",i)],ph(f"s-filters-{lg}.webp",t("alt_filters",i)))}
 {feat("y",False,"","#e11d74","us",t("f3t",i),t("f3p",i),[t("f3a",i)],frvis)}
-{feat("k",True,"","#8b5cf6","st",t("f4t",i),t("f4p",i),[],ph("s-stats.webp",t("alt_stats",i)))}
+{feat("k",True,"","#8b5cf6","st",t("f4t",i),t("f4p",i),[],ph(f"s-stats-{lg}.webp",t("alt_stats",i)))}
 {feat("y",False,"","#22c55e","bl",t("f5t",i),t("f5p",i),[],ntvis)}
 <section class="band small k"><div class="wrap"><h2>{a("mt")}</h2><div class="grid">{small}</div></div></section>
 <section class="band free y"><div class="wrap"><div><h2>{a("ft")}</h2><p>{a("fp")}</p></div><div class="btns" style="margin:0"><a class="btn" href="{APP}">{a("req")}</a><a class="btn ghost" href="{KOFI}" rel="noopener">{a("kofi")}</a></div></div></section>
