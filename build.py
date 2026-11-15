@@ -2,7 +2,7 @@
 """Génère le site (5 langues) : python3 build.py   →  index.html (en), fr/, es/, it/, de/ + sitemap.xml
 Variable d'environnement DOMAIN pour les URL absolues (défaut https://in-the-pit.com)."""
 import os, random, html
-DOMAIN = os.environ.get('DOMAIN', 'https://in-the-pit.com').rstrip('/')
+DOMAIN = os.environ.get('DOMAIN', 'https://site.i.n-t.he-p.it').rstrip('/')
 APP = 'https://i.n-t.he-p.it'
 KOFI = 'https://ko-fi.com/inthepit'
 L = ['en', 'fr', 'es', 'it', 'de']
