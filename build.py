@@ -62,6 +62,17 @@ T = {
 
 'm11': ("Your data stays yours", "Tes données restent les tiennes", "Tus datos siguen siendo tuyos", "I tuoi dati restano tuoi", "Deine Daten bleiben deine"), 'm11p': ("Export everything or delete your account in one tap. No ads, nothing sold.", "Exporte tout ou supprime ton compte en un geste. Pas de pub, rien n’est vendu.", "Exporta todo o elimina tu cuenta en un toque. Sin publicidad, nada se vende.", "Esporta tutto o elimina il tuo account con un tocco. Niente pubblicità, niente viene venduto.", "Exportiere alles oder lösche dein Konto mit einem Tipp. Keine Werbung, nichts wird verkauft."),
 'm12': ("Optional ticket vault", "Coffre à billets facultatif", "Caja fuerte de entradas opcional", "Cassaforte dei biglietti facoltativa", "Optionaler Ticket-Tresor"), 'm12p': ("Lock your PDF tickets with a passphrase only you know. They are encrypted on your phone, so nobody else can read them.", "Verrouille tes billets PDF avec une phrase secrète que toi seul connais. Ils sont chiffrés sur ton téléphone : personne d’autre ne peut les lire.", "Bloquea tus entradas PDF con una frase secreta que solo tú conoces. Se cifran en tu teléfono: nadie más puede leerlas.", "Proteggi i tuoi biglietti PDF con una frase segreta che conosci solo tu. Sono crittografati sul tuo telefono: nessun altro può leggerli.", "Sperre deine PDF-Tickets mit einer Passphrase, die nur du kennst. Sie werden auf deinem Handy verschlüsselt, niemand sonst kann sie lesen."),
+'lg_t': ("Legal notice", "Mentions légales", "Aviso legal", "Note legali", "Impressum"),
+'lg_priv': ("Privacy policy", "Politique de confidentialité", "Política de privacidad", "Informativa sulla privacy", "Datenschutzerklärung"),
+'lg_back': ("Back to the home page", "Retour à l’accueil", "Volver al inicio", "Torna alla home", "Zurück zur Startseite"),
+'lg_h1': ("Publisher", "Éditeur", "Editor", "Editore", "Herausgeber"),
+'lg_p1': ("This site and the In The Pit app are published by Pascal Berne, a private individual, on a non-commercial basis. Contact: {C}.", "Ce site et l’application In The Pit sont édités par Pascal Berne, particulier, à titre non commercial. Contact : {C}.", "Este sitio y la aplicación In The Pit están editados por Pascal Berne, particular, sin fines comerciales. Contacto: {C}.", "Questo sito e l’app In The Pit sono pubblicati da Pascal Berne, privato, senza fini commerciali. Contatto: {C}.", "Diese Website und die App In The Pit werden von Pascal Berne als Privatperson ohne kommerzielle Absicht herausgegeben. Kontakt: {C}."),
+'lg_h2': ("Hosting", "Hébergement", "Alojamiento", "Hosting", "Hosting"),
+'lg_p2': ("This site and the app are hosted by Netlify, Inc., 101 2nd Street, San Francisco, CA 94105, USA (netlify.com). The app’s data is hosted by Supabase on servers located in Paris, France.", "Ce site et l’application sont hébergés par Netlify, Inc., 101 2nd Street, San Francisco, CA 94105, États-Unis (netlify.com). Les données de l’application sont hébergées par Supabase sur des serveurs situés à Paris, France.", "Este sitio y la aplicación están alojados por Netlify, Inc., 101 2nd Street, San Francisco, CA 94105, EE. UU. (netlify.com). Los datos de la aplicación están alojados por Supabase en servidores situados en París, Francia.", "Questo sito e l’app sono ospitati da Netlify, Inc., 101 2nd Street, San Francisco, CA 94105, USA (netlify.com). I dati dell’app sono ospitati da Supabase su server situati a Parigi, Francia.", "Diese Website und die App werden von Netlify, Inc., 101 2nd Street, San Francisco, CA 94105, USA (netlify.com) gehostet. Die Daten der App liegen bei Supabase auf Servern in Paris, Frankreich."),
+'lg_h3': ("Personal data", "Données personnelles", "Datos personales", "Dati personali", "Personenbezogene Daten"),
+'lg_p3': ("This site uses no cookies, no audience measurement and no forms. Like any web host, Netlify keeps technical connection logs (IP address, pages requested) for security. How the app handles your data is described in its privacy policy.", "Ce site n’utilise ni cookies, ni mesure d’audience, ni formulaire. Comme tout hébergeur, Netlify conserve des journaux techniques de connexion (adresse IP, pages demandées) à des fins de sécurité. Le traitement de vos données par l’application est décrit dans sa politique de confidentialité.", "Este sitio no utiliza cookies, medición de audiencia ni formularios. Como todo alojamiento web, Netlify conserva registros técnicos de conexión (dirección IP, páginas solicitadas) por seguridad. El tratamiento de tus datos por la aplicación se describe en su política de privacidad.", "Questo sito non usa cookie, misurazione dell’audience né moduli. Come ogni host web, Netlify conserva log tecnici di connessione (indirizzo IP, pagine richieste) per sicurezza. Il trattamento dei tuoi dati da parte dell’app è descritto nella sua informativa sulla privacy.", "Diese Website verwendet keine Cookies, keine Reichweitenmessung und keine Formulare. Wie jeder Webhoster speichert Netlify aus Sicherheitsgründen technische Verbindungsprotokolle (IP-Adresse, aufgerufene Seiten). Wie die App mit deinen Daten umgeht, steht in ihrer Datenschutzerklärung."),
+'lg_h4': ("Content", "Contenus", "Contenidos", "Contenuti", "Inhalte"),
+'lg_p4': ("The In The Pit name, logo, texts and screenshots belong to the publisher. The band names shown in the screenshots are fictional.", "Le nom In The Pit, le logo, les textes et les captures d’écran appartiennent à l’éditeur. Les noms de groupes visibles dans les captures sont fictifs.", "El nombre In The Pit, el logotipo, los textos y las capturas pertenecen al editor. Los nombres de grupos de las capturas son ficticios.", "Il nome In The Pit, il logo, i testi e gli screenshot appartengono all’editore. I nomi dei gruppi negli screenshot sono fittizi.", "Der Name In The Pit, das Logo, die Texte und die Screenshots gehören dem Herausgeber. Die Bandnamen in den Screenshots sind erfunden."),
 'tk_k': ("Concert ticket", "Place de concert", "Entrada de concierto", "Biglietto concerto", "Konzertkarte"),
 'tk_m': ("Membership card", "Abonnement / Adhésion", "Abono / Membresía", "Abbonamento / Tessera", "Abo / Mitgliedschaft"),
 
@@ -221,6 +232,12 @@ footer img{width:90px}
 footer a{color:#d6d6d8}
 """
 
+LAT = "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+EXT = "U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+# Police hébergée sur le site lui-même : aucun appel à Google Fonts (RGPD).
+def fonts(base):
+    return ''.join("@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:62%% 125%%;font-display:swap;src:url(%sfonts/%s) format('woff2');unicode-range:%s}" % (base, f, r) for f, r in (('archivo-ext.woff2', EXT), ('archivo.woff2', LAT)))
+
 def t(k, i): return T[k][i]
 def e(s): return html.escape(s, quote=True)
 
@@ -250,9 +267,8 @@ def page(i):
 <meta property="og:title" content="{a("title")}"><meta property="og:description" content="{a("desc")}"><meta property="og:type" content="website"><meta property="og:url" content="{canon}"><meta property="og:image" content="{DOMAIN}/img/og.png">
 <meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0f0f10">
 <link rel="icon" href="{base}img/icon-192.png"><link rel="apple-touch-icon" href="{base}img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
-<style>{CSS}</style></head><body>
+<link rel="preload" href="{base}fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<style>{fonts(base)}{CSS}</style></head><body>
 <a class="skip" href="#main">{a("skip")}</a>
 <div class="brand"><a href="{lhref(lg)}" aria-label="In The Pit"><img src="{base}img/logo.webp" alt="In The Pit" width="900" height="300"></a></div>
 <header class="top"><div class="wrap"><nav><a class="l" href="#tk">{a("nav_f")}</a><a class="l" href="#faq">{a("nav_q")}</a><div class="lang" aria-label="Language">{langs}</div></nav></div></header>
@@ -269,8 +285,24 @@ def page(i):
 <section class="band faq k" id="faq"><div class="wrap"><h2>{a("qt")}</h2>{faq}</div></section>
 <section class="band last y"><div class="wrap"><h2>{a("cta_t")}</h2><div class="btns"><a class="btn" href="{APP}">{a("open")}</a></div></div></section>
 </main>
-<footer><div class="wrap"><img src="{base}img/logo.webp" alt="In The Pit" width="900" height="300"><span>{a("foot")}</span><span><a href="{KOFI}" rel="noopener">Ko-fi</a></span></div></footer>
+<footer><div class="wrap"><img src="{base}img/logo.webp" alt="In The Pit" width="900" height="300"><span>{a("foot")}</span><span><a href="legal/">{a("lg_t")}</a></span><span><a href="{APP}/confidentialite.html?lang={lg}">{a("lg_priv")}</a></span><span><a href="{KOFI}" rel="noopener">Ko-fi</a></span></div></footer>
 </body></html>'''
+
+CONTACT = 'contact_I.n-T@he-P.it'
+def legal(i):
+    lg = L[i]; base = '../' if lg == 'en' else '../../'; home = '../'
+    def a(k): return e(t(k, i)).replace('{C}', f'<a href="mailto:{CONTACT}">{CONTACT}</a>')
+    secs = ''.join(f'<h2>{a(f"lg_h{n}")}</h2><p>{a(f"lg_p{n}")}</p>' for n in range(1, 5))
+    return f'''<!doctype html>
+<html lang="{lg}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{a("lg_t")} - In The Pit</title><meta name="robots" content="noindex"><meta name="theme-color" content="#0f0f10">
+<link rel="icon" href="{base}img/icon-192.png">
+<style>{fonts(base)}{CSS}.lgl{{max-width:720px;margin:0 auto;padding:40px 20px 70px}}.lgl img{{width:220px;height:auto;display:block;margin:0 0 26px}}.lgl h1{{font-size:2rem;margin:0 0 18px}}.lgl h2{{font-size:1.15rem;margin:28px 0 8px}}.lgl p{{margin:0 0 10px;line-height:1.6}}.lgl a{{color:inherit}}</style></head><body>
+<main class="lgl"><a href="{home}" aria-label="In The Pit"><img src="{base}img/logo.webp" alt="In The Pit" width="900" height="300"></a>
+<h1>{a("lg_t")}</h1>{secs}
+<p><a href="{APP}/confidentialite.html?lang={lg}">{a("lg_priv")}</a></p>
+<p><a href="{home}">‹ {a("lg_back")}</a></p></main></body></html>
+'''
 
 def main():
     root = os.path.dirname(os.path.abspath(__file__))
@@ -278,6 +310,8 @@ def main():
         d = root if lg == 'en' else os.path.join(root, lg)
         os.makedirs(d, exist_ok=True)
         open(os.path.join(d, 'index.html'), 'w', encoding='utf-8').write(page(i))
+        os.makedirs(os.path.join(d, 'legal'), exist_ok=True)
+        open(os.path.join(d, 'legal', 'index.html'), 'w', encoding='utf-8').write(legal(i))
     urls = ''.join(f'<url><loc>{DOMAIN}/{"" if l=="en" else l+"/"}</loc></url>' for l in L)
     open(os.path.join(root, 'sitemap.xml'), 'w').write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>')
     open(os.path.join(root, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nSitemap: {DOMAIN}/sitemap.xml\n')
