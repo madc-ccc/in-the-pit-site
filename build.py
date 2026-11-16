@@ -286,7 +286,7 @@ def page(i):
 <section class="band faq k" id="faq"><div class="wrap"><h2>{a("qt")}</h2>{faq}</div></section>
 <section class="band last y"><div class="wrap"><h2>{a("cta_t")}</h2><div class="btns"><a class="btn" href="{APP}">{a("open")}</a></div></div></section>
 </main>
-<footer><div class="wrap"><img src="{base}img/logo.webp" alt="In The Pit" width="900" height="300"><span><a href="legal/">{a("lg_t")}</a></span><span><a href="{APP}/confidentialite.html?lang={lg}">{a("lg_priv")}</a></span><span><a href="{KOFI}" rel="noopener">Ko-fi</a></span></div></footer>
+<footer><div class="wrap"><img src="{base}img/logo.webp" alt="In The Pit" width="900" height="300"><span><a href="legal/">{a("lg_t")}</a></span><span><a href="{APP}/confidentialite.html?lang={lg}">{a("lg_priv")}</a></span><span><a href="{KOFI}" rel="noopener">Ko-fi</a></span><span>© 2026 Zion Hut Studio</span></div></footer>
 </body></html>'''
 
 CONTACT = 'contact_I.n-T@he-P.it'
@@ -302,7 +302,7 @@ def legal(i):
 <main class="lgl"><a href="{home}" aria-label="In The Pit"><img src="{base}img/logo.webp" alt="In The Pit" width="900" height="300"></a>
 <h1>{a("lg_t")}</h1>{secs}
 <p><a href="{APP}/confidentialite.html?lang={lg}">{a("lg_priv")}</a></p>
-<p><a href="{home}">‹ {a("lg_back")}</a></p></main></body></html>
+<p><a href="{home}">‹ {a("lg_back")}</a></p><p style="margin-top:28px;opacity:.7">© 2026 Zion Hut Studio</p></main></body></html>
 '''
 
 def main():
