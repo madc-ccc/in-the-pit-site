@@ -285,7 +285,7 @@ def page(i):
 <section class="band faq k" id="faq"><div class="wrap"><h2>{a("qt")}</h2>{faq}</div></section>
 <section class="band last y"><div class="wrap"><h2>{a("cta_t")}</h2><div class="btns"><a class="btn" href="{APP}">{a("open")}</a></div></div></section>
 </main>
-<footer><div class="wrap"><img src="{base}img/logo.webp" alt="In The Pit" width="900" height="300"><span>{a("foot")}</span><span><a href="legal/">{a("lg_t")}</a></span><span><a href="{APP}/confidentialite.html?lang={lg}">{a("lg_priv")}</a></span><span><a href="{KOFI}" rel="noopener">Ko-fi</a></span></div></footer>
+<footer><div class="wrap"><img src="{base}img/logo.webp" alt="In The Pit" width="900" height="300"><span><a href="legal/">{a("lg_t")}</a></span><span><a href="{APP}/confidentialite.html?lang={lg}">{a("lg_priv")}</a></span><span><a href="{KOFI}" rel="noopener">Ko-fi</a></span></div></footer>
 </body></html>'''
 
 CONTACT = 'contact_I.n-T@he-P.it'
