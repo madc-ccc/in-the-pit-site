@@ -74,6 +74,21 @@ T = {
 'lg_p3': ("This site uses no cookies, no audience measurement and no forms. Like any web host, Netlify keeps technical connection logs (IP address, pages requested) for security. How the app handles your data is described in its privacy policy.", "Ce site n’utilise ni cookies, ni mesure d’audience, ni formulaire. Comme tout hébergeur, Netlify conserve des journaux techniques de connexion (adresse IP, pages demandées) à des fins de sécurité. Le traitement de vos données par l’application est décrit dans sa politique de confidentialité.", "Este sitio no utiliza cookies, medición de audiencia ni formularios. Como todo alojamiento web, Netlify conserva registros técnicos de conexión (dirección IP, páginas solicitadas) por seguridad. El tratamiento de tus datos por la aplicación se describe en su política de privacidad.", "Questo sito non usa cookie, misurazione dell’audience né moduli. Come ogni host web, Netlify conserva log tecnici di connessione (indirizzo IP, pagine richieste) per sicurezza. Il trattamento dei tuoi dati da parte dell’app è descritto nella sua informativa sulla privacy.", "Diese Website verwendet keine Cookies, keine Reichweitenmessung und keine Formulare. Wie jeder Webhoster speichert Netlify aus Sicherheitsgründen technische Verbindungsprotokolle (IP-Adresse, aufgerufene Seiten). Wie die App mit deinen Daten umgeht, steht in ihrer Datenschutzerklärung."),
 'lg_h4': ("Content", "Contenus", "Contenidos", "Contenuti", "Inhalte"),
 'lg_p4': ("The In The Pit name, logo, texts and screenshots belong to the publisher. The band names shown in the screenshots are fictional.", "Le nom In The Pit, le logo, les textes et les captures d’écran appartiennent à l’éditeur. Les noms de groupes visibles dans les captures sont fictifs.", "El nombre In The Pit, el logotipo, los textos y las capturas pertenecen al editor. Los nombres de grupos de las capturas son ficticios.", "Il nome In The Pit, il logo, i testi e gli screenshot appartengono all’editore. I nomi dei gruppi negli screenshot sono fittizi.", "Der Name In The Pit, das Logo, die Texte und die Screenshots gehören dem Herausgeber. Die Bandnamen in den Screenshots sind erfunden."),
+'c1t': ("No PDF? Still worth it.", "Pas de PDF ? Ça vaut le coup quand même.", "¿Sin PDF? Vale la pena igual.", "Niente PDF? Ne vale comunque la pena.", "Kein PDF? Lohnt sich trotzdem."),
+'c1p': ("Uploading tickets is optional. Without a single PDF, In The Pit already gives you:", "Importer ses billets est facultatif. Sans un seul PDF, In The Pit t’apporte déjà :", "Subir las entradas es opcional. Sin un solo PDF, In The Pit ya te da:", "Caricare i biglietti è facoltativo. Senza un solo PDF, In The Pit ti offre già:", "Tickets hochzuladen ist freiwillig. Ganz ohne PDF bietet dir In The Pit schon:"),
+'c1a': ("your whole concert history, each show added in seconds", "tout ton historique de concerts, chaque date ajoutée en quelques secondes", "todo tu historial de conciertos, cada uno añadido en segundos", "tutta la tua storia di concerti, ognuno aggiunto in pochi secondi", "deine ganze Konzertgeschichte, jedes Konzert in Sekunden eingetragen"),
+'c1b': ("filters, statistics and your favourite venues", "les filtres, les statistiques et tes salles préférées", "filtros, estadísticas y tus salas favoritas", "filtri, statistiche e i tuoi locali preferiti", "Filter, Statistiken und deine Lieblingshallen"),
+'c1c': ("your friends’ concerts, and a pop-up when they add new ones", "les concerts de tes amis, et une fenêtre quand ils en ajoutent", "los conciertos de tus amigos, y un aviso cuando añaden nuevos", "i concerti dei tuoi amici, e un avviso quando ne aggiungono", "die Konzerte deiner Freunde, mit Hinweis bei neuen Einträgen"),
+'c1d': ("reminders before every show, and the public list of concerts near you", "des rappels avant chaque concert, et la liste publique des concerts près de chez toi", "recordatorios antes de cada concierto, y la lista pública de conciertos cerca de ti", "promemoria prima di ogni concerto, e l’elenco pubblico dei concerti vicino a te", "Erinnerungen vor jedem Konzert und die öffentliche Liste von Konzerten in deiner Nähe"),
+'c2t': ("Your tickets, under lock.", "Tes billets, sous clé.", "Tus entradas, bajo llave.", "I tuoi biglietti, sotto chiave.", "Deine Tickets, gut verschlossen."),
+'c2p': ("If you do upload a PDF, you can encrypt it on your phone before it leaves. Nobody else can open it, not even us.", "Si tu importes un PDF, tu peux le chiffrer sur ton téléphone avant qu’il ne parte. Personne d’autre ne peut l’ouvrir, pas même nous.", "Si subes un PDF, puedes cifrarlo en tu teléfono antes de que salga. Nadie más puede abrirlo, ni siquiera nosotros.", "Se carichi un PDF, puoi crittografarlo sul tuo telefono prima che parta. Nessun altro può aprirlo, nemmeno noi.", "Wenn du ein PDF hochlädst, kannst du es auf deinem Handy verschlüsseln, bevor es losgeht. Niemand sonst kann es öffnen, nicht einmal wir."),
+'c2a': ("One passphrase for all your tickets", "Une phrase secrète pour tous tes billets", "Una frase secreta para todas tus entradas", "Una frase segreta per tutti i tuoi biglietti", "Eine Passphrase für alle deine Tickets"),
+'c2ap': ("Turn on the ticket vault once, and every new ticket is encrypted automatically.", "Active le coffre à billets une fois, et chaque nouveau billet est chiffré automatiquement.", "Activa la caja fuerte una vez y cada entrada nueva se cifra automáticamente.", "Attiva la cassaforte una volta e ogni nuovo biglietto viene crittografato automaticamente.", "Aktiviere den Ticket-Tresor einmal, und jedes neue Ticket wird automatisch verschlüsselt."),
+'c2b': ("Or one passphrase for one ticket", "Ou une phrase secrète pour un seul billet", "O una frase secreta para una sola entrada", "Oppure una frase segreta per un solo biglietto", "Oder eine Passphrase für ein einziges Ticket"),
+'c2bp': ("Give the ticket that matters most a passphrase of its own, separate from everything else.", "Donne au billet qui compte le plus sa propre phrase secrète, séparée de tout le reste.", "Dale a la entrada que más importa su propia frase secreta, separada de todo lo demás.", "Dai al biglietto più importante una frase segreta tutta sua, separata da tutto il resto.", "Gib dem wichtigsten Ticket eine eigene Passphrase, getrennt von allem anderen."),
+'c2c': ("AES-256 encryption, done on your phone. The passphrase never leaves it.", "Chiffrement AES-256, réalisé sur ton téléphone. La phrase secrète ne le quitte jamais.", "Cifrado AES-256, hecho en tu teléfono. La frase secreta nunca sale de él.", "Crittografia AES-256, eseguita sul tuo telefono. La frase segreta non lo lascia mai.", "AES-256-Verschlüsselung direkt auf deinem Handy. Die Passphrase verlässt es nie."),
+'q4': ("Do I have to upload my tickets?", "Dois-je importer mes billets ?", "¿Tengo que subir mis entradas?", "Devo caricare i miei biglietti?", "Muss ich meine Tickets hochladen?"),
+'a4': ("No. Everything except the ticket screen works without them: your list, filters, statistics, friends, reminders and the public list. If you do upload one, you can encrypt it with a passphrase for all your tickets or one for that ticket only.", "Non. Tout fonctionne sans eux, sauf l’écran du billet : ta liste, les filtres, les statistiques, les amis, les rappels et la liste publique. Si tu en importes un, tu peux le chiffrer avec une phrase secrète commune à tous tes billets, ou propre à ce billet.", "No. Todo funciona sin ellas salvo la pantalla de la entrada: tu lista, filtros, estadísticas, amigos, recordatorios y la lista pública. Si subes una, puedes cifrarla con una frase secreta para todas tus entradas o solo para esa.", "No. Tutto funziona senza, tranne la schermata del biglietto: la tua lista, i filtri, le statistiche, gli amici, i promemoria e l’elenco pubblico. Se ne carichi uno, puoi crittografarlo con una frase segreta per tutti i biglietti o solo per quello.", "Nein. Alles außer dem Ticket-Bildschirm funktioniert ohne: deine Liste, Filter, Statistiken, Freunde, Erinnerungen und die öffentliche Liste. Lädst du eines hoch, kannst du es mit einer Passphrase für alle Tickets oder nur für dieses verschlüsseln."),
 'tk_k': ("Concert ticket", "Place de concert", "Entrada de concierto", "Biglietto concerto", "Konzertkarte"),
 'tk_m': ("Membership card", "Abonnement / Adhésion", "Abono / Membresía", "Abbonamento / Tessera", "Abo / Mitgliedschaft"),
 
@@ -97,9 +112,12 @@ T = {
 'alt_filters': ("The filters panel", "Le panneau de filtres", "El panel de filtros", "Il pannello dei filtri", "Das Filterpanel"),
 'alt_stats': ("The statistics screen", "L’écran des statistiques", "La pantalla de estadísticas", "La schermata delle statistiche", "Der Statistikbildschirm"),
 }
-FAQ = [('q1', 'a1'), ('q2', 'a2'), ('q3', 'a3')]
+FAQ = [('q4', 'a4'), ('q1', 'a1'), ('q2', 'a2'), ('q3', 'a3')]
 
 ICON = {
+ 'lk': '<rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/><path d="M12 14.5v2.5"/>',
+ 'ok': '<path d="M4 12.5l5 5L20 6.5"/>',
+ 'ls': '<path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/>',
  'tk': '<path d="M3 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4z"/><path d="M14 6v12" stroke-dasharray="2 2.5"/>',
  'fl': '<path d="M3 5h18l-7 8v6l-4 2v-8z"/>',
  'us': '<circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="9" r="2.4"/><path d="M17 14.3c2.4 0 4 1.7 4 4.2"/>',
@@ -216,6 +234,19 @@ ul.pts li::before{content:"";position:absolute;left:0;top:.42em;width:14px;heigh
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.grid{grid-template-columns:1fr}}
 
+.claims{--bg:var(--red);--fg:#fff}
+.claims .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:start}
+.claims h2{font-size:clamp(2.3rem,5.4vw,4rem);line-height:.98;margin:18px 0 18px}
+.claims .lead2{font-size:1.2rem;line-height:1.5;max-width:40ch;margin:0 0 20px}
+.claims ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.claims li{display:flex;gap:12px;align-items:flex-start;font-size:1.08rem;line-height:1.4}
+.claims li svg{flex:none;width:22px;height:22px;margin-top:1px}
+.claims .opt{display:grid;gap:12px;margin:0 0 18px}
+.claims .opt>div{background:rgba(0,0,0,.22);border-radius:14px;padding:16px 18px}
+.claims .opt b{display:block;font-size:1.15rem;margin-bottom:4px}
+.claims .fine{font-size:.98rem;opacity:.92;display:flex;gap:10px;align-items:center}
+.claims .ic{display:inline-flex;width:54px;height:54px;border-radius:14px;background:#fff;color:var(--red);align-items:center;justify-content:center}
+@media(max-width:860px){.claims .wrap{grid-template-columns:1fr}}
 .free .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
 .free p{font-size:1.2rem;margin-top:18px;max-width:48ch}
 @media(max-width:860px){.free .wrap{grid-template-columns:1fr}}
@@ -276,6 +307,10 @@ def page(i):
 <main id="main">
 <section class="hero k"><div class="wrap"><div><h1>{a("h1")}</h1><p class="lead">{a("hp")}</p><div class="btns"><a class="btn" href="{APP}">{a("open")}</a><a class="btn ghost" href="#tk">{a("see")}</a></div></div>
 <div class="phones" aria-hidden="false">{ph(f"s-filters-{lg}.webp",t("alt_filters",i)).replace('class="phone"','class="phone p2"')}{ph(f"s-list-{lg}.webp",t("alt_list",i)).replace('class="phone"','class="phone p1"')}</div></div></section>
+<section class="band claims" id="claims"><div class="wrap">
+<div><span class="ic">{icon("ls")}</span><h2>{a("c1t")}</h2><p class="lead2">{a("c1p")}</p><ul>{''.join(f'<li>{icon("ok")}<span>{a(k)}</span></li>' for k in ("c1a","c1b","c1c","c1d"))}</ul></div>
+<div><span class="ic">{icon("lk")}</span><h2>{a("c2t")}</h2><p class="lead2">{a("c2p")}</p><div class="opt"><div><b>{a("c2a")}</b>{a("c2ap")}</div><div><b>{a("c2b")}</b>{a("c2bp")}</div></div><p class="fine">{icon("lk")}<span>{a("c2c")}</span></p></div>
+</div></section>
 {feat("y",False,"","#f59e0b","tk",t("f1t",i),t("f1p",i),[t("f1a",i),t("f1b",i),t("f1c",i)],tkvis)}
 {feat("k",True,"","#2f6fed","fl",t("f2t",i),t("f2p",i),[t("f2a",i),t("f2b",i),t("f2c",i)],ph(f"s-filters-{lg}.webp",t("alt_filters",i)))}
 {feat("y",False,"","#e11d74","us",t("f3t",i),t("f3p",i),[t("f3a",i)],frvis)}
