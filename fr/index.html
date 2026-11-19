@@ -174,10 +174,10 @@ function cptCalc(rows,now){
     const a=pm(r.debut),z=Math.min(N,r.fin?pm(r.fin):N),v=+r.montant||0,f=r.sens==='frais';if(a>N)continue;first=Math.min(first,a);
     const ms=r.periodicite==='mensuel'?Array.from({length:Math.max(0,z-a+1)},(_,i)=>a+i):r.periodicite==='annuel'?Array.from({length:Math.max(0,Math.floor((z-a)/12)+1)},(_,i)=>a+12*i):[a];
     for(const m of ms){const p=per[m]=per[m]||{f:0,d:0};if(f){p.f+=v;frais+=v}else{p.d+=v;dons+=v}}
-    if(f){const on=!r.fin||pm(r.fin)>=N,c=r.categorie||'autre';
+    if(f){const on=!r.fin||pm(r.fin)>=N,cs=String(r.categorie||'autre').split(',').filter(Boolean);
       // current monthly cost: recurring lines still running, yearly ones spread over 12 months, one-off costs of the last 12 months spread too
       const mm=on&&r.periodicite==='mensuel'?v:on&&r.periodicite==='annuel'?v/12:r.periodicite==='unique'&&a>N-12?v/12:0;
-      mens+=mm;cats[c]=(cats[c]||0)+mm}
+      mens+=mm;cs.forEach(c=>cats[c]=(cats[c]||0)+mm/cs.length)}
   }
   const nb=Math.max(1,Math.min(12,N-first+1));let d12=0;
   const mois=Array.from({length:12},(_,i)=>{const m=N-11+i,p=per[m]||{f:0,d:0};if(m>N-nb)d12+=p.d;return{y:Math.floor(m/12),m:m%12,f:p.f,d:p.d}});
