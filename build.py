@@ -113,7 +113,7 @@ T = {
 'foot': ("Made for people who still keep their ticket stubs.", "Fait pour ceux qui gardent encore leurs billets.", "Hecho para quienes aún guardan sus entradas.", "Fatto per chi conserva ancora i biglietti.", "Für alle, die ihre Tickets noch aufheben."),
 'skip': ("Skip to content", "Aller au contenu", "Ir al contenido", "Vai al contenuto", "Zum Inhalt"),
 'alt_list': ("The In The Pit concert list", "La liste de concerts d’In The Pit", "La lista de conciertos de In The Pit", "L’elenco dei concerti di In The Pit", "Die Konzertliste von In The Pit"),
-'alt_filters': ("The filters panel", "Le panneau de filtres", "El panel de filtros", "Il pannello dei filtri", "Das Filterpanel"),
+'alt_filters': ("The side menu with the filters", "Le menu latéral et ses filtres", "El menú lateral con los filtros", "Il menu laterale con i filtri", "Das Seitenmenü mit den Filtern"),
 'alt_stats': ("The statistics screen", "L’écran des statistiques", "La pantalla de estadísticas", "La schermata delle statistiche", "Der Statistikbildschirm"),
 }
 FAQ = [('q4', 'a4'), ('q1', 'a1'), ('q2', 'a2'), ('q3', 'a3')]
