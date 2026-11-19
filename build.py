@@ -1,3 +1,4 @@
+import json
 #!/usr/bin/env python3
 """Génère le site (5 langues) : python3 build.py   →  index.html (en), fr/, es/, it/, de/ + sitemap.xml
 Variable d'environnement DOMAIN pour les URL absolues (défaut https://in-the-pit.com)."""
@@ -100,6 +101,22 @@ T = {
 
 'ft': ("Free, and it stays free", "Gratuit, et ça le reste", "Gratis, y se queda gratis", "Gratis, e resta gratis", "Kostenlos, und das bleibt so"),
 'fp': ("In The Pit costs nothing. Running it has fixed costs, so if you enjoy it you can chip in on Ko-fi. Accounts are approved by hand: ask for access with your email and you will hear back.", "In The Pit ne coûte rien. Le faire tourner a des coûts fixes : si tu l’apprécies, tu peux participer sur Ko-fi. Les comptes sont validés à la main : demande l’accès avec ton e-mail et tu auras une réponse.", "In The Pit no cuesta nada. Mantenerlo tiene costes fijos, así que si te gusta puedes colaborar en Ko-fi. Las cuentas se aprueban a mano: pide acceso con tu correo y recibirás respuesta.", "In The Pit non costa nulla. Mantenerlo ha costi fissi, quindi se ti piace puoi contribuire su Ko-fi. Gli account sono approvati a mano: chiedi l’accesso con la tua e-mail e riceverai una risposta.", "In The Pit kostet nichts. Der Betrieb hat Fixkosten, wenn es dir gefällt, kannst du auf Ko-fi etwas beitragen. Konten werden von Hand freigegeben: Frage den Zugang mit deiner E-Mail an, du bekommst eine Antwort."),
+'bk_t': ("The books, wide open", "Les comptes, à livre ouvert", "Las cuentas, a la vista", "I conti, a carte scoperte", "Die Finanzen, offen gelegt"),
+'bk_p': ("In The Pit has no ads and sells no data. Running it still costs money every month. Here is what it costs and what your donations bring in, updated live.", "In The Pit n’a pas de publicité et ne vend aucune donnée. Le faire tourner coûte pourtant de l’argent chaque mois. Voici ce que ça coûte et ce que vos dons rapportent, à jour en direct.", "In The Pit no tiene publicidad y no vende ningún dato. Aun así, mantenerlo cuesta dinero cada mes. Esto es lo que cuesta y lo que aportan vuestras donaciones, actualizado en directo.", "In The Pit non ha pubblicità e non vende alcun dato. Farlo funzionare costa comunque ogni mese. Ecco quanto costa e quanto portano le vostre donazioni, aggiornato in diretta.", "In The Pit hat keine Werbung und verkauft keine Daten. Der Betrieb kostet trotzdem jeden Monat Geld. Hier siehst du, was er kostet und was eure Spenden einbringen, live aktualisiert."),
+'bk_cov': ("of monthly costs covered by donations", "des frais mensuels couverts par les dons", "de los gastos mensuales cubiertos por donaciones", "delle spese mensili coperte dalle donazioni", "der monatlichen Kosten durch Spenden gedeckt"),
+'bk_fm': ("Costs per month", "Frais par mois", "Gastos al mes", "Spese al mese", "Kosten pro Monat"),
+'bk_dm': ("Donations per month", "Dons par mois", "Donaciones al mes", "Donazioni al mese", "Spenden pro Monat"),
+'bk_sol': ("Balance since the start", "Solde depuis le début", "Saldo desde el inicio", "Saldo dall’inizio", "Saldo seit Beginn"),
+'bk_12': ("The last 12 months", "Les 12 derniers mois", "Los últimos 12 meses", "Gli ultimi 12 mesi", "Die letzten 12 Monate"),
+'bk_f': ("Costs", "Frais", "Gastos", "Spese", "Kosten"),
+'bk_d': ("Donations", "Dons", "Donaciones", "Donazioni", "Spenden"),
+'bk_wt': ("What if donations aren’t enough?", "Et si les dons ne suffisent pas ?", "¿Y si las donaciones no bastan?", "E se le donazioni non bastano?", "Und wenn die Spenden nicht reichen?"),
+'bk_wp': ("In The Pit will stay free as long as donations cover its costs. If they don’t over time, the app will have to go freemium: the essentials would stay free, and some advanced features would become paid. Every donation pushes that moment back.", "In The Pit restera gratuit tant que les dons couvrent ses frais. Si ce n’est pas le cas dans la durée, l’app devra passer en freemium : l’essentiel resterait gratuit, et certaines fonctions avancées deviendraient payantes. Chaque don repousse ce moment.", "In The Pit seguirá siendo gratuita mientras las donaciones cubran sus gastos. Si no es así con el tiempo, la app tendrá que pasar a freemium: lo esencial seguiría siendo gratuito y algunas funciones avanzadas pasarían a ser de pago. Cada donación aleja ese momento.", "In The Pit resterà gratuita finché le donazioni coprono le spese. Se a lungo andare non sarà così, l’app dovrà passare al freemium: l’essenziale resterebbe gratuito e alcune funzioni avanzate diventerebbero a pagamento. Ogni donazione allontana quel momento.", "In The Pit bleibt kostenlos, solange Spenden die Kosten decken. Wenn das auf Dauer nicht der Fall ist, muss die App auf Freemium umstellen: Das Wesentliche bliebe kostenlos, einige erweiterte Funktionen würden kostenpflichtig. Jede Spende schiebt diesen Moment hinaus."),
+'bk_time': ("The time spent building and running the app isn’t counted: it’s given for free.", "Le temps passé à créer et à faire vivre l’app n’est pas compté : il est offert.", "El tiempo dedicado a crear y mantener la app no se cuenta: es un regalo.", "Il tempo speso per creare e far vivere l’app non è contato: è offerto.", "Die Zeit für Entwicklung und Betrieb der App ist nicht eingerechnet: Sie ist geschenkt."),
+'bk_load': ("Loading the figures…", "Chargement des chiffres…", "Cargando las cifras…", "Caricamento dei numeri…", "Zahlen werden geladen …"),
+'bk_err': ("The figures can’t be loaded right now. They are also in the app, under Finances in the menu.", "Les chiffres ne peuvent pas être chargés pour l’instant. Ils sont aussi dans l’app, menu Les comptes.", "Las cifras no se pueden cargar ahora. También están en la app, en el menú Cuentas.", "Al momento non è possibile caricare i numeri. Sono anche nell’app, menu Conti.", "Die Zahlen können gerade nicht geladen werden. Du findest sie auch in der App im Menü unter Finanzen."),
+'bk_empty': ("The first figures will be published here very soon.", "Les premiers chiffres seront publiés ici très bientôt.", "Las primeras cifras se publicarán aquí muy pronto.", "I primi numeri saranno pubblicati qui a breve.", "Die ersten Zahlen erscheinen hier in Kürze."),
+'m19': ("Open books", "Comptes publics", "Cuentas públicas", "Conti pubblici", "Offene Finanzen"), 'm19p': ("The app’s costs and the donations it receives are published in the app and on this site, so everyone can see whether it pays its way.", "Les frais de l’app et les dons reçus sont publiés dans l’app et sur ce site : chacun voit si elle tient la route.", "Los gastos de la app y las donaciones recibidas se publican en la app y en este sitio: todos pueden ver si se sostiene.", "Le spese dell’app e le donazioni ricevute sono pubblicate nell’app e su questo sito: tutti possono vedere se si regge.", "Die Kosten der App und die erhaltenen Spenden werden in der App und auf dieser Website veröffentlicht, damit alle sehen, ob sie sich trägt."),
 'kofi': ("Chip in on Ko-fi", "Participer sur Ko-fi", "Colaborar en Ko-fi", "Contribuisci su Ko-fi", "Auf Ko-fi unterstützen"),
 'req': ("Request access", "Demander l’accès", "Pedir acceso", "Richiedi l’accesso", "Zugang anfragen"),
 
@@ -253,6 +270,21 @@ ul.pts li::before{content:"";position:absolute;left:0;top:.42em;width:14px;heigh
 .claims .fine{font-size:.98rem;opacity:.92;display:flex;gap:10px;align-items:center}
 .claims .ic{display:inline-flex;width:54px;height:54px;border-radius:14px;background:#fff;color:var(--red);align-items:center;justify-content:center}
 @media(max-width:860px){.claims .wrap{grid-template-columns:1fr}}
+.books .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:start}
+.books h2{margin-bottom:18px}.books .lead2{font-size:1.2rem;line-height:1.5;max-width:42ch;margin:0 0 26px}
+.books .warn{background:var(--ticket);color:var(--ink);border-radius:var(--r);padding:20px 22px;margin:0 0 18px}.books .warn b{display:block;font:900 1.5rem/1.1 var(--f);font-stretch:80%;margin-bottom:8px}.books .warn p{font-size:1.02rem;line-height:1.5}
+.books .fine{font-size:.98rem;opacity:.75;margin:0 0 24px}
+.live{--c:var(--grn)}.live.mid{--c:var(--org)}.live.low{--c:var(--red)}
+.live .pc{font:900 clamp(6rem,17vw,11rem)/.82 var(--f);font-stretch:62%;color:var(--c);letter-spacing:-.01em}
+.live .cov{font-size:1.15rem;margin:10px 0 14px}
+.live .meter{height:14px;border-radius:7px;background:#2a2a2d;overflow:hidden}.live .meter i{display:block;height:100%;width:0;background:var(--c);border-radius:7px;transition:width 1s ease-out}
+@media(prefers-reduced-motion:reduce){.live .meter i{transition:none}}
+.live .kp{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px 0 34px}.live .kp div{border-top:3px solid #333;padding-top:10px;min-width:0}
+.live .kp b{display:block;font:900 clamp(1.5rem,3vw,2rem)/1 var(--f);font-stretch:75%;white-space:nowrap}.live .kp b.neg{color:var(--red)}.live .kp b.pos{color:var(--grn)}.live .kp span{display:block;font-size:.92rem;opacity:.75;margin-top:6px;line-height:1.3}
+.live h3{font-size:1.25rem;margin:0 0 8px}.live .lg{display:flex;gap:18px;font-size:.92rem;opacity:.85;margin-bottom:10px}.live .lg span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:7px;background:var(--org);vertical-align:-1px}.live .lg .d::before{background:var(--grn)}
+.live .bars{display:flex;gap:6px;align-items:flex-end;height:150px}.live .bars>div{flex:1;display:flex;flex-direction:column;align-items:center;height:100%;min-width:0}.live .bars .b{flex:1;width:100%;display:flex;gap:2px;align-items:flex-end;justify-content:center}.live .bars i{flex:1;max-width:12px;min-height:2px;border-radius:3px 3px 0 0;background:var(--org)}.live .bars i.d{background:var(--grn)}.live .bars small{font-size:.8rem;opacity:.7;margin-top:6px}
+.live .msg{font-size:1.1rem;opacity:.8}
+@media(max-width:860px){.books .wrap{grid-template-columns:1fr}}
 .free .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
 .free p{font-size:1.2rem;margin-top:18px;max-width:48ch}
 @media(max-width:860px){.free .wrap{grid-template-columns:1fr}}
@@ -296,7 +328,7 @@ def page(i):
     tkvis = f'<div class="phone"><div class="tkscr"><span class="tb l" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M9.5 13h6M9.5 17h6"/></svg></span><span class="tb l2" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><circle cx="8.5" cy="11" r="2"/><path d="M5.5 16c.6-1.5 1.7-2.2 3-2.2s2.4.7 3 2.2M14.5 10h4M14.5 13.5h4"/></svg></span><span class="tb r" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></span><img src="{base}img/logo.webp" alt="" width="900" height="300"><span class="kind">{a("tk_k")}</span><b>Velvet Static</b><small>Le Trianon, Paris<br>2026-11-28</small><div class="qr">{qr_svg()}</div><i class="val">VS-2611-A7K3-9X41-0058</i></div></div>'
     frvis = f'<div class="stack"><div class="tile"><small>2027-02-03 · Razzmatazz, Barcelona</small><b>Los Cometas</b><em>Alice</em></div><div class="tile"><small>2027-01-17 · L’Olympia, Paris</small><b>{e(t("tile_a",i))}</b><em>Bob</em></div><div class="bubble">{e(t("note",i))}<small>{e(t("note_c",i))}</small></div></div>'
     ntvis = f'<div class="stack"><div class="notif"><img src="{base}img/icon-192.png" alt="" width="38" height="38"><div><b>In The Pit</b>{e(t("n1",i))}</div></div><div class="notif"><img src="{base}img/icon-192.png" alt="" width="38" height="38"><div><b>In The Pit</b>{e(t("n2",i))}</div></div><div class="notif"><img src="{base}img/icon-192.png" alt="" width="38" height="38"><div><b>In The Pit</b>{e(t("n3",i))}</div></div></div>'
-    small = ''.join(f'<div><h3>{a(f"m{n}")}</h3><p>{a(f"m{n}p")}</p></div>' for n in range(1, 19))
+    small = ''.join(f'<div><h3>{a(f"m{n}")}</h3><p>{a(f"m{n}p")}</p></div>' for n in range(1, 20))
     faq = ''.join(f'<details><summary>{a(q)}</summary><p>{a(an)}</p></details>' for q, an in FAQ)
     return f'''<!doctype html>
 <html lang="{lg}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -324,11 +356,48 @@ def page(i):
 {feat("y",False,"","#22c55e","bl",t("f5t",i),t("f5p",i),[],ntvis)}
 <section class="band small k"><div class="wrap"><h2>{a("mt")}</h2><div class="grid">{small}</div></div></section>
 <section class="band free y"><div class="wrap"><div><h2>{a("ft")}</h2><p>{a("fp")}</p></div><div class="btns" style="margin:0"><a class="btn" href="{APP}">{a("req")}</a><a class="btn ghost" href="{KOFI}" rel="noopener">{a("kofi")}</a></div></div></section>
+<section class="band books k" id="books"><div class="wrap">
+<div><h2>{a("bk_t")}</h2><p class="lead2">{a("bk_p")}</p><div class="warn"><b>{a("bk_wt")}</b><p>{a("bk_wp")}</p></div><p class="fine">{a("bk_time")}</p><a class="btn" href="{KOFI}" rel="noopener">{a("kofi")}</a></div>
+<div class="live" id="live" data-lg="{lg}"><p class="msg" id="bk_msg">{a("bk_load")}</p><div id="bk_box" hidden><div class="pc" id="bk_pc">—</div><p class="cov">{a("bk_cov")}</p><div class="meter"><i id="bk_m"></i></div>
+<div class="kp"><div><b id="bk_fm"></b><span>{a("bk_fm")}</span></div><div><b id="bk_dm"></b><span>{a("bk_dm")}</span></div><div><b id="bk_sol"></b><span>{a("bk_sol")}</span></div></div>
+<h3>{a("bk_12")}</h3><div class="lg"><span class="f">{a("bk_f")}</span><span class="d">{a("bk_d")}</span></div><div class="bars" id="bk_bars"></div></div></div>
+</div></section>
+<script>{BKJS.replace("@ERR@",json.dumps(t("bk_err",i))).replace("@EMPTY@",json.dumps(t("bk_empty",i)))}</script>
 <section class="band faq k" id="faq"><div class="wrap"><h2>{a("qt")}</h2>{faq}</div></section>
 <section class="band last y"><div class="wrap"><h2>{a("cta_t")}</h2><div class="btns"><a class="btn" href="{APP}">{a("open")}</a></div></div></section>
 </main>
 <footer><div class="wrap"><img src="{base}img/logo.webp" alt="In The Pit" width="900" height="300"><span><a href="legal/">{a("lg_t")}</a></span><span><a href="{APP}/confidentialite.html?lang={lg}">{a("lg_priv")}</a></span><span><a href="{KOFI}" rel="noopener">Ko-fi</a></span><span>© 2026 Zion Hut Studio</span></div></footer>
 </body></html>'''
+
+BKJS = r"""(function(){var el=document.getElementById('live'),lg=el.dataset.lg,LOC={en:'en-GB',fr:'fr-FR',es:'es-ES',it:'it-IT',de:'de-DE'}[lg],msg=document.getElementById('bk_msg');
+function cptCalc(rows,now){
+  now=now||new Date();const mk=d=>d.getFullYear()*12+d.getMonth(),N=mk(now),pm=s=>{const [y,m]=s.split('-').map(Number);return y*12+m-1};
+  const per={},cats={};let frais=0,dons=0,first=N,mens=0;
+  for(const r of rows){
+    const a=pm(r.debut),z=Math.min(N,r.fin?pm(r.fin):N),v=+r.montant||0,f=r.sens==='frais';if(a>N)continue;first=Math.min(first,a);
+    const ms=r.periodicite==='mensuel'?Array.from({length:Math.max(0,z-a+1)},(_,i)=>a+i):r.periodicite==='annuel'?Array.from({length:Math.max(0,Math.floor((z-a)/12)+1)},(_,i)=>a+12*i):[a];
+    for(const m of ms){const p=per[m]=per[m]||{f:0,d:0};if(f){p.f+=v;frais+=v}else{p.d+=v;dons+=v}}
+    if(f){const on=!r.fin||pm(r.fin)>=N,c=r.categorie||'autre';
+      // current monthly cost: recurring lines still running, yearly ones spread over 12 months, one-off costs of the last 12 months spread too
+      const mm=on&&r.periodicite==='mensuel'?v:on&&r.periodicite==='annuel'?v/12:r.periodicite==='unique'&&a>N-12?v/12:0;
+      mens+=mm;cats[c]=(cats[c]||0)+mm}
+  }
+  const nb=Math.max(1,Math.min(12,N-first+1));let d12=0;
+  const mois=Array.from({length:12},(_,i)=>{const m=N-11+i,p=per[m]||{f:0,d:0};if(m>N-nb)d12+=p.d;return{y:Math.floor(m/12),m:m%12,f:p.f,d:p.d}});
+  const donsMois=d12/nb;
+  return{frais,dons,solde:dons-frais,mens,donsMois,couv:mens>0?donsMois/mens:null,mois,cats,vide:!rows.length};
+}
+var eur=function(v){return new Intl.NumberFormat(LOC,{style:'currency',currency:'EUR',minimumFractionDigits:Math.abs(v)<100&&v%1?2:0,maximumFractionDigits:Math.abs(v)<100?2:0}).format(v)};
+fetch('https://avclfmjhlmjtdcrlankq.supabase.co/rest/v1/compta?select=sens,montant,periodicite,debut,fin,categorie',{headers:{apikey:'sb_publishable_h3KHkTYHZ_fgBrqVpS0lpw_oZ04ktve'}}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(rows){
+if(!rows.length){msg.textContent=@EMPTY@;return}
+var c=cptCalc(rows),pc=c.couv==null?null:Math.round(c.couv*100);el.className='live '+(pc==null||pc>=100?'ok':pc>=50?'mid':'low');
+document.getElementById('bk_pc').textContent=pc==null?'—':pc+' %';
+document.getElementById('bk_fm').textContent=eur(c.mens);document.getElementById('bk_dm').textContent=eur(c.donsMois);
+var so=document.getElementById('bk_sol');so.textContent=(c.solde>0?'+':'')+eur(c.solde);so.className=c.solde<0?'neg':'pos';
+var mx=Math.max.apply(null,[1].concat(c.mois.map(function(m){return Math.max(m.f,m.d)}))),mf=new Intl.DateTimeFormat(LOC,{month:'narrow'});
+document.getElementById('bk_bars').innerHTML=c.mois.map(function(m){return '<div title="'+eur(m.f)+' / '+eur(m.d)+'"><div class="b"><i style="height:'+(m.f/mx*100)+'%"></i><i class="d" style="height:'+(m.d/mx*100)+'%"></i></div><small>'+mf.format(new Date(m.y,m.m,1))+'</small></div>'}).join('');
+msg.hidden=true;document.getElementById('bk_box').hidden=false;requestAnimationFrame(function(){requestAnimationFrame(function(){document.getElementById('bk_m').style.width=Math.min(100,pc||0)+'%'})});
+}).catch(function(){msg.textContent=@ERR@})})();"""
 
 CONTACT = 'contact_I.n-T@he-P.it'
 def legal(i):
