@@ -352,10 +352,11 @@ def page(i):
 <style>{fonts(base)}{CSS}</style></head><body>
 <a class="skip" href="#main">{a("skip")}</a>
 <div class="brand"><a href="{lhref(lg)}" aria-label="In The Pit"><img src="{base}img/logo.webp" alt="In The Pit" width="900" height="300"></a></div>
-<header class="top"><div class="wrap"><nav><a class="l" href="#tk">{a("nav_f")}</a><a class="l" href="#faq">{a("nav_q")}</a><div class="lang" aria-label="Language">{langs}</div></nav></div></header>
+<header class="top"><div class="wrap"><nav><a class="l" href="#ag">{a("nav_f")}</a><a class="l" href="#faq">{a("nav_q")}</a><div class="lang" aria-label="Language">{langs}</div></nav></div></header>
 <main id="main">
-<section class="hero k"><div class="wrap"><div><h1>{a("h1")}</h1><p class="lead">{a("hp")}</p><div class="btns"><a class="btn" href="{APP}">{a("open")}</a><a class="btn ghost" href="#tk">{a("see")}</a></div></div>
+<section class="hero k"><div class="wrap"><div><h1>{a("h1")}</h1><p class="lead">{a("hp")}</p><div class="btns"><a class="btn" href="{APP}">{a("open")}</a><a class="btn ghost" href="#ag">{a("see")}</a></div></div>
 <div class="phones" aria-hidden="false">{ph(f"s-filters-{lg}.webp",t("alt_filters",i)).replace('class="phone"','class="phone p2"')}{ph(f"s-list-{lg}.webp",t("alt_list",i)).replace('class="phone"','class="phone p1"')}</div></div></section>
+{feat("y",False,"","#dc2626","ag",t("f6t",i),t("f6p",i),[t("f6a",i),t("f6b",i),t("f6c",i)],agvis)}
 <section class="band claims" id="claims"><div class="wrap">
 <div><span class="ic">{icon("ls")}</span><h2>{a("c1t")}</h2><p class="lead2">{a("c1p")}</p><ul>{''.join(f'<li>{icon("ok")}<span>{a(k)}</span></li>' for k in ("c1a","c1b","c1c","c1d"))}</ul></div>
 <div><span class="ic">{icon("lk")}</span><h2>{a("c2t")}</h2><p class="lead2">{a("c2p")}</p><div class="opt"><div><b>{a("c2a")}</b>{a("c2ap")}</div><div><b>{a("c2b")}</b>{a("c2bp")}</div></div><p class="fine">{icon("lk")}<span>{a("c2c")}</span></p></div>
@@ -365,7 +366,6 @@ def page(i):
 {feat("y",False,"","#e11d74","us",t("f3t",i),t("f3p",i),[t("f3a",i)],frvis)}
 {feat("k",True,"","#8b5cf6","st",t("f4t",i),t("f4p",i),[],ph(f"s-stats-{lg}.webp",t("alt_stats",i)))}
 {feat("y",False,"","#22c55e","bl",t("f5t",i),t("f5p",i),[],ntvis)}
-{feat("k",True,"","#dc2626","ag",t("f6t",i),t("f6p",i),[t("f6a",i),t("f6b",i),t("f6c",i)],agvis)}
 <section class="band small k"><div class="wrap"><h2>{a("mt")}</h2><div class="grid">{small}</div></div></section>
 <section class="band free y"><div class="wrap"><div><h2>{a("ft")}</h2><p>{a("fp")}</p></div><div class="btns" style="margin:0"><a class="btn" href="{APP}">{a("req")}</a><a class="btn ghost" href="{KOFI}" rel="noopener">{a("kofi")}</a></div></div></section>
 <section class="band books k" id="books"><div class="wrap">
